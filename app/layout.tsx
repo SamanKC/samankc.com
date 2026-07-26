@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://your-domain-here.com'),
   title: {
     default: 'Your Name Here — Software Engineer',
     template: '%s | Your Name Here',
