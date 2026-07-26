@@ -105,7 +105,9 @@ Run: `npm install next react react-dom framer-motion next-themes lucide-react gr
 
 - [ ] **Step 3: Install dev dependencies**
 
-Run: `npm install -D typescript @types/node @types/react @types/react-dom tailwindcss postcss autoprefixer vitest @vitejs/plugin-react jsdom @testing-library/react @testing-library/jest-dom`
+Run: `npm install -D typescript @types/node @types/react @types/react-dom tailwindcss @tailwindcss/postcss postcss vitest @vitejs/plugin-react jsdom @testing-library/react @testing-library/jest-dom`
+
+Check what actually got installed afterward with `npm ls next tailwindcss typescript` — if `tailwindcss` resolves to a 3.x version instead of 4.x, also add `autoprefixer` and follow the v3-style `postcss.config.js`/`tailwind.config.ts` approach from this plan's design doc instead of Steps 7/8 below.
 
 - [ ] **Step 4: Write `tsconfig.json`**
 
@@ -142,49 +144,33 @@ Run: `npm install -D typescript @types/node @types/react @types/react-dom tailwi
 
 - [ ] **Step 6: Write `next.config.js`**
 
+> Note: this project uses Tailwind CSS v4 and Next.js 16 (verify with `npm ls next tailwindcss` — if a future install pulls Tailwind v3/Next 14 instead, use the v3-style `tailwind.config.ts` + `@tailwind base/components/utilities` approach from this plan's original design doc instead of Steps 7/11 below). Next 16 no longer accepts an `eslint` key in `next.config.js` at all (it's an unrecognized option, not just deprecated) — omit it; this project has no ESLint installed so there's nothing for it to control anyway.
+
 ```js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
-  eslint: { ignoreDuringBuilds: true },
 };
 
 module.exports = nextConfig;
 ```
 
-- [ ] **Step 7: Write `tailwind.config.ts`**
+- [ ] **Step 7: Skip `tailwind.config.ts` — Tailwind v4 is configured in CSS**
 
-```ts
-import type { Config } from 'tailwindcss';
-
-const config: Config = {
-  darkMode: 'class',
-  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        display: ['var(--font-space-grotesk)', 'sans-serif'],
-      },
-    },
-  },
-  plugins: [],
-};
-
-export default config;
-```
+Tailwind v4 has no required JS/TS config file: theme tokens and the dark-mode variant are declared directly in `app/globals.css` (Step 11), and source-file content detection is automatic. Do not create `tailwind.config.ts`.
 
 - [ ] **Step 8: Write `postcss.config.js`**
 
 ```js
 module.exports = {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    '@tailwindcss/postcss': {},
   },
 };
 ```
+
+Install `@tailwindcss/postcss` alongside `tailwindcss` in Step 3's dev-dependency install (Tailwind v4 moved its PostCSS plugin to this separate package); `autoprefixer` is no longer needed since `@tailwindcss/postcss` includes vendor prefixing.
 
 - [ ] **Step 9: Write `vitest.config.ts` and `vitest.setup.ts`**
 
@@ -219,10 +205,12 @@ out
 
 - [ ] **Step 11: Write minimal `app/globals.css`**
 
+Tailwind v4's `@import` form replaces the old `@tailwind base/components/utilities` directives, and `@custom-variant dark` makes `dark:` utilities respond to a `.dark` class anywhere above the element (matching next-themes' `attribute="class"` toggle in Task 2) instead of v4's media-query default.
+
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
@@ -479,6 +467,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   );
+}
+```
+
+- [ ] **Step 9b: Register the `font-sans`/`font-display` theme tokens in `app/globals.css`**
+
+Tailwind v4 generates utility classes from `@theme` tokens instead of a JS config's `theme.extend.fontFamily`. Add this block to `app/globals.css` (below the `@custom-variant dark` line from Task 1):
+
+```css
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
 }
 ```
 
@@ -1755,8 +1754,9 @@ export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const project = getProjectBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
   if (!project) return {};
   return {
     title: project.title,
@@ -1764,8 +1764,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function ProjectDetailPage({ params }: { params: { slug: string } }) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
   if (!project) notFound();
 
   return (
@@ -1914,19 +1915,21 @@ export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   try {
-    const post = getPostBySlug(params.slug);
+    const { slug } = await params;
+    const post = getPostBySlug(slug);
     return { title: post.title, description: post.excerpt };
   } catch {
     return {};
   }
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   let post;
   try {
-    post = getPostBySlug(params.slug);
+    post = getPostBySlug(slug);
   } catch {
     notFound();
   }
