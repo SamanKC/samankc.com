@@ -145,12 +145,15 @@ Check what actually got installed afterward with `npm ls next tailwindcss typesc
 - [ ] **Step 6: Write `next.config.js`**
 
 > Note: this project uses Tailwind CSS v4 and Next.js 16 (verify with `npm ls next tailwindcss` — if a future install pulls Tailwind v3/Next 14 instead, use the v3-style `tailwind.config.ts` + `@tailwind base/components/utilities` approach from this plan's original design doc instead of Steps 7/11 below). Next 16 no longer accepts an `eslint` key in `next.config.js` at all (it's an unrecognized option, not just deprecated) — omit it; this project has no ESLint installed so there's nothing for it to control anyway.
+>
+> `trailingSlash: true` is required for Hostinger deployment: without it, Next 16's static export emits flat `<route>.html` files (e.g. `projects/some-slug.html`) instead of `<route>/index.html`, and plain Apache shared hosting won't reliably serve a `.html` file for an extension-less URL like `/projects/some-slug` (which is what every internal `<Link>` in this app produces) without `MultiViews` being enabled on the host, which isn't guaranteed. `trailingSlash: true` makes every route export as `<route>/index.html` — served correctly by any static host with zero special config — and Next's router automatically appends the trailing slash to internal links to match, so no component code needs to account for it.
 
 ```js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
   images: { unoptimized: true },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
