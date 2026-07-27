@@ -6,6 +6,6 @@
     </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
-  <text x="80" y="300" font-family="sans-serif" font-size="64" font-weight="700" fill="white">Your Name Here</text>
-  <text x="80" y="370" font-family="sans-serif" font-size="34" fill="#a5b4fc">Software Engineer — Portfolio</text>
+  <text x="80" y="300" font-family="sans-serif" font-size="64" font-weight="700" fill="white">Saman KC</text>
+  <text x="80" y="370" font-family="sans-serif" font-size="34" fill="#a5b4fc">Software Developer — Portfolio</text>
 </svg>
