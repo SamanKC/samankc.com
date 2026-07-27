@@ -6,14 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Menu } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import MobileMenu from './MobileMenu';
-
-const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-];
+import { NAV_LINKS } from './navLinks';
 
 export default function Navbar() {
   const pathname = usePathname();

@@ -3,14 +3,7 @@
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-
-const NAV_LINKS = [
-  { href: '/', label: 'Home' },
-  { href: '/projects', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
-];
+import { NAV_LINKS } from './navLinks';
 
 export default function MobileMenu({ open, onClose }: { open: boolean; onClose: () => void }) {
   return (
