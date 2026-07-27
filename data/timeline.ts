@@ -8,6 +8,13 @@ export type TimelineEntry = {
 
 export const timeline: TimelineEntry[] = [
   {
+    kind: 'job',
+    title: 'Enrollment Officer / Reception (Contract)',
+    organization: "King's Own Institute",
+    dateRange: 'Jun 2026 — Jul 2026',
+    description: 'Handled front-desk reception and enrollment administration during a fixed-term contract.',
+  },
+  {
     kind: 'education',
     title: 'Master of Information Technology (MIT)',
     organization: "King's Own Institute, Sydney, Australia",

@@ -23,5 +23,5 @@ export const profile: Profile = {
     linkedin: 'https://linkedin.com/in/saman-kc',
     email: 'saman.kc1641@gmail.com',
   },
-  resumeUrl: '/resume-placeholder.pdf',
+  resumeUrl: '/resume.pdf',
 };
