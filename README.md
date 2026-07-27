@@ -30,4 +30,8 @@ All placeholder content lives in a few centralized files:
 - `public/resume-placeholder.pdf` — replace with your real resume PDF (keep the filename, or update `resumeUrl` in `data/profile.ts`)
 - `public/og-image.svg` — replace with a real 1200x630 PNG/JPG for better social-share previews
 
+`app/layout.tsx`'s site-wide title/description (and Open Graph tags) derive automatically from `data/profile.ts` — no separate edit needed there.
+
+Once you have a real deployed domain, update `metadataBase` in `app/layout.tsx` (currently `https://your-domain-here.com`) so Open Graph/social-share URLs resolve correctly.
+
 After editing, re-run `npm run build` and re-upload `out/`.

@@ -6,6 +6,10 @@ import ResumeButton from '@/components/ResumeButton';
 export const metadata: Metadata = {
   title: 'Contact',
   description: `Get in touch with ${profile.name}.`,
+  openGraph: {
+    title: 'Contact',
+    description: `Get in touch with ${profile.name}.`,
+  },
 };
 
 export default function ContactPage() {

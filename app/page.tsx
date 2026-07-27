@@ -8,6 +8,10 @@ import ProjectCard from '@/components/ProjectCard';
 export const metadata: Metadata = {
   title: 'Home',
   description: profile.tagline,
+  openGraph: {
+    title: 'Home',
+    description: profile.tagline,
+  },
 };
 
 export default function Home() {

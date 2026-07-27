@@ -6,6 +6,10 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Blog',
   description: 'Writing on software engineering — replace with your real posts.',
+  openGraph: {
+    title: 'Blog',
+    description: 'Writing on software engineering — replace with your real posts.',
+  },
 };
 
 export default function BlogPage() {

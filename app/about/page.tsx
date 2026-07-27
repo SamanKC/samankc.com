@@ -8,6 +8,10 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: 'About',
   description: `About ${profile.name} — background, experience, and education.`,
+  openGraph: {
+    title: 'About',
+    description: `About ${profile.name} — background, experience, and education.`,
+  },
 };
 
 export default function AboutPage() {

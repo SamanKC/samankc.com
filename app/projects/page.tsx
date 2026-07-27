@@ -6,6 +6,10 @@ import AnimatedSection from '@/components/AnimatedSection';
 export const metadata: Metadata = {
   title: 'Projects',
   description: 'A selection of projects — replace with your real project portfolio.',
+  openGraph: {
+    title: 'Projects',
+    description: 'A selection of projects — replace with your real project portfolio.',
+  },
 };
 
 export default function ProjectsPage() {

@@ -12,7 +12,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   try {
     const { slug } = await params;
     const post = getPostBySlug(slug);
-    return { title: post.title, description: post.excerpt };
+    return {
+      title: post.title,
+      description: post.excerpt,
+      openGraph: { title: post.title, description: post.excerpt },
+    };
   } catch {
     return {};
   }

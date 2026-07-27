@@ -4,21 +4,25 @@ import './globals.css';
 import ThemeProvider from '@/components/ThemeProvider';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { profile } from '@/data/profile';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' });
 
+const siteTitle = `${profile.name} — ${profile.title}`;
+const siteDescription = `Portfolio of ${profile.name} — ${profile.title.toLowerCase()}. Projects, writing, and background.`;
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://your-domain-here.com'),
   title: {
-    default: 'Your Name Here — Software Engineer',
-    template: '%s | Your Name Here',
+    default: siteTitle,
+    template: '%s | ' + profile.name,
   },
-  description: 'Portfolio of Your Name Here — software engineer. Projects, writing, and background.',
+  description: siteDescription,
   openGraph: {
-    title: 'Your Name Here — Software Engineer',
-    description: 'Portfolio of Your Name Here — software engineer. Projects, writing, and background.',
-    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: 'Your Name Here — Software Engineer' }],
+    title: siteTitle,
+    description: siteDescription,
+    images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: siteTitle }],
     type: 'website',
   },
 };
