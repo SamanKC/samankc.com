@@ -35,3 +35,12 @@ All placeholder content lives in a few centralized files:
 Once you have a real deployed domain, update `metadataBase` in `app/layout.tsx` (currently `https://your-domain-here.com`) so Open Graph/social-share URLs resolve correctly.
 
 After editing, re-run `npm run build` and re-upload `out/`.
+
+## Using the admin editor
+
+Instead of editing `content/blog/*.md` directly, you can manage posts from `/admin` on the live site:
+
+1. Create a GitHub personal access token: GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → generate one scoped to **only** the `samankc.com` repository, with **Contents: Read and write** permission and no other permissions.
+2. Visit `yourdomain.com/admin` and paste the token in when prompted. It's saved only in that browser's local storage.
+3. Create, edit, or delete posts from there. Every save commits directly to `main` and triggers the existing GitHub Actions deploy — changes go live within a couple of minutes, the same as pushing from your machine.
+4. Use "Forget token" on that page if you ever want to clear it from a shared or public computer.
