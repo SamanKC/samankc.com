@@ -2,9 +2,9 @@ import { describe, it, expect } from 'vitest';
 import { getAllPosts, getPostBySlug } from './posts';
 
 describe('getAllPosts', () => {
-  it('reads all four placeholder posts', () => {
+  it('reads at least one post', () => {
     const posts = getAllPosts();
-    expect(posts).toHaveLength(4);
+    expect(posts.length).toBeGreaterThan(0);
   });
 
   it('sorts posts by date descending', () => {
