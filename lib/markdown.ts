@@ -1,7 +1,5 @@
 import matter from 'gray-matter';
-import { unified } from 'unified';
-import remarkParse from 'remark-parse';
-import remarkHtml from 'remark-html';
+import { renderMarkdown } from './renderMarkdown';
 
 export type BlogPost = {
   slug: string;
@@ -23,7 +21,7 @@ function computeReadingTime(content: string): string {
 
 export function parsePost(raw: string, slug: string): BlogPost {
   const { data, content } = matter(raw);
-  const contentHtml = unified().use(remarkParse).use(remarkHtml).processSync(content).toString();
+  const contentHtml = renderMarkdown(content);
 
   return {
     slug,
