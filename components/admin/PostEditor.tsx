@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import matter from 'gray-matter';
-import { getPost, savePost } from '@/lib/github';
+import { getPost, savePost, GithubApiError } from '@/lib/github';
 import { renderMarkdown } from '@/lib/renderMarkdown';
 
 function slugify(title: string): string {
@@ -17,10 +17,12 @@ export default function PostEditor({
   token,
   filename,
   onDone,
+  onInvalidToken,
 }: {
   token: string;
   filename: string | null;
   onDone: () => void;
+  onInvalidToken: () => void;
 }) {
   const isNew = filename === null;
   const [slug, setSlug] = useState('');
@@ -33,6 +35,8 @@ export default function PostEditor({
   const [loading, setLoading] = useState(!isNew);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isAuthError, setIsAuthError] = useState(false);
+  const [dirty, setDirty] = useState(false);
 
   useEffect(() => {
     if (isNew || !filename) return;
@@ -48,7 +52,12 @@ export default function PostEditor({
         setBody(markdownBody.trim());
         setSha(fileSha);
       } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load post.');
+        if (err instanceof GithubApiError && (err.status === 401 || err.status === 403)) {
+          setIsAuthError(true);
+          setError("Your token isn't valid or has expired — click below to re-enter it.");
+        } else {
+          setError(err instanceof Error ? err.message : 'Failed to load post.');
+        }
       } finally {
         setLoading(false);
       }
@@ -73,12 +82,23 @@ export default function PostEditor({
           .filter(Boolean),
       });
       await savePost(token, `${slug}.md`, frontmatter, sha);
+      setDirty(false);
       onDone();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to save post.');
+      if (err instanceof GithubApiError && (err.status === 401 || err.status === 403)) {
+        setIsAuthError(true);
+        setError("Your token isn't valid or has expired — click below to re-enter it.");
+      } else {
+        setError(err instanceof Error ? err.message : 'Failed to save post.');
+      }
     } finally {
       setSaving(false);
     }
+  }
+
+  function handleBack() {
+    if (dirty && !window.confirm('Discard unsaved changes?')) return;
+    onDone();
   }
 
   if (loading) {
@@ -87,14 +107,27 @@ export default function PostEditor({
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-12">
-      <button type="button" onClick={onDone} className="text-sm font-semibold text-violet-600 dark:text-cyan-400">
+      <button type="button" onClick={handleBack} className="text-sm font-semibold text-violet-600 dark:text-cyan-400">
         &larr; Back to posts
       </button>
       <h1 className="mt-4 font-display text-2xl font-bold text-slate-900 dark:text-white">
         {isNew ? 'New Post' : 'Edit Post'}
       </h1>
 
-      {error && <p className="mt-4 text-sm text-red-500">{error}</p>}
+      {error && (
+        <div className="mt-4">
+          <p className="text-sm text-red-500">{error}</p>
+          {isAuthError && (
+            <button
+              type="button"
+              onClick={onInvalidToken}
+              className="mt-2 text-sm font-semibold text-violet-600 dark:text-cyan-400"
+            >
+              Re-enter token
+            </button>
+          )}
+        </div>
+      )}
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
@@ -102,7 +135,10 @@ export default function PostEditor({
           <input
             type="text"
             value={title}
-            onChange={(e) => setTitle(e.target.value)}
+            onChange={(e) => {
+              setTitle(e.target.value);
+              setDirty(true);
+            }}
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
           />
         </label>
@@ -121,7 +157,10 @@ export default function PostEditor({
           <input
             type="date"
             value={date}
-            onChange={(e) => setDate(e.target.value)}
+            onChange={(e) => {
+              setDate(e.target.value);
+              setDirty(true);
+            }}
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
           />
         </label>
@@ -130,7 +169,10 @@ export default function PostEditor({
           <input
             type="text"
             value={tags}
-            onChange={(e) => setTags(e.target.value)}
+            onChange={(e) => {
+              setTags(e.target.value);
+              setDirty(true);
+            }}
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
           />
         </label>
@@ -139,7 +181,10 @@ export default function PostEditor({
           <input
             type="text"
             value={excerpt}
-            onChange={(e) => setExcerpt(e.target.value)}
+            onChange={(e) => {
+              setExcerpt(e.target.value);
+              setDirty(true);
+            }}
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
           />
         </label>
@@ -150,7 +195,10 @@ export default function PostEditor({
           Body (Markdown)
           <textarea
             value={body}
-            onChange={(e) => setBody(e.target.value)}
+            onChange={(e) => {
+              setBody(e.target.value);
+              setDirty(true);
+            }}
             rows={20}
             className="rounded-lg border border-slate-300 bg-white px-3 py-2 font-mono text-sm text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
           />

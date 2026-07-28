@@ -4,7 +4,11 @@ import { useEffect, useState, type ReactNode } from 'react';
 
 const TOKEN_STORAGE_KEY = 'admin-github-token';
 
-export default function TokenGate({ children }: { children: (token: string) => ReactNode }) {
+export default function TokenGate({
+  children,
+}: {
+  children: (token: string, onInvalidToken: () => void) => ReactNode;
+}) {
   const [token, setToken] = useState<string | null>(null);
   const [input, setInput] = useState('');
   const [mounted, setMounted] = useState(false);
@@ -13,6 +17,11 @@ export default function TokenGate({ children }: { children: (token: string) => R
     setToken(window.localStorage.getItem(TOKEN_STORAGE_KEY));
     setMounted(true);
   }, []);
+
+  function clearToken() {
+    window.localStorage.removeItem(TOKEN_STORAGE_KEY);
+    setToken(null);
+  }
 
   if (!mounted) {
     return null;
@@ -59,16 +68,13 @@ export default function TokenGate({ children }: { children: (token: string) => R
       <div className="flex justify-end px-6 pt-4">
         <button
           type="button"
-          onClick={() => {
-            window.localStorage.removeItem(TOKEN_STORAGE_KEY);
-            setToken(null);
-          }}
+          onClick={clearToken}
           className="text-xs text-slate-500 hover:text-violet-600 dark:text-slate-400 dark:hover:text-cyan-400"
         >
           Forget token
         </button>
       </div>
-      {children(token)}
+      {children(token, clearToken)}
     </div>
   );
 }

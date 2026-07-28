@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import matter from 'gray-matter';
-import { listPosts, getPost, deletePost, type GithubFile } from '@/lib/github';
+import { listPosts, getPost, deletePost, GithubApiError, type GithubFile } from '@/lib/github';
 
 type PostSummary = {
   filename: string;
@@ -15,16 +15,20 @@ export default function PostList({
   token,
   onEdit,
   onNew,
+  onInvalidToken,
 }: {
   token: string;
   onEdit: (filename: string) => void;
   onNew: () => void;
+  onInvalidToken: () => void;
 }) {
   const [posts, setPosts] = useState<PostSummary[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [isAuthError, setIsAuthError] = useState(false);
 
   async function loadPosts() {
     setError(null);
+    setIsAuthError(false);
     try {
       const files: GithubFile[] = await listPosts(token);
       const summaries = await Promise.all(
@@ -42,7 +46,12 @@ export default function PostList({
       summaries.sort((a, b) => (a.date < b.date ? 1 : -1));
       setPosts(summaries);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load posts.');
+      if (err instanceof GithubApiError && (err.status === 401 || err.status === 403)) {
+        setIsAuthError(true);
+        setError("Your token isn't valid or has expired — click below to re-enter it.");
+      } else {
+        setError(err instanceof Error ? err.message : 'Failed to load posts.');
+      }
     }
   }
 
@@ -57,7 +66,12 @@ export default function PostList({
       await deletePost(token, post.filename, post.sha);
       await loadPosts();
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to delete post.');
+      if (err instanceof GithubApiError && (err.status === 401 || err.status === 403)) {
+        setIsAuthError(true);
+        setError("Your token isn't valid or has expired — click below to re-enter it.");
+      } else {
+        setError(err instanceof Error ? err.message : 'Failed to delete post.');
+      }
     }
   }
 
@@ -74,7 +88,20 @@ export default function PostList({
         </button>
       </div>
 
-      {error && <p className="mt-4 text-sm text-red-500">{error}</p>}
+      {error && (
+        <div className="mt-4">
+          <p className="text-sm text-red-500">{error}</p>
+          {isAuthError && (
+            <button
+              type="button"
+              onClick={onInvalidToken}
+              className="mt-2 text-sm font-semibold text-violet-600 dark:text-cyan-400"
+            >
+              Re-enter token
+            </button>
+          )}
+        </div>
+      )}
 
       {!posts && !error && <p className="mt-6 text-slate-500 dark:text-slate-400">Loading posts…</p>}
 

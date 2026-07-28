@@ -29,6 +29,7 @@ describe('listPosts', () => {
       'https://api.github.com/repos/SamanKC/samankc.com/contents/content/blog',
       expect.objectContaining({
         headers: expect.objectContaining({ Authorization: 'Bearer test-token' }),
+        cache: 'no-store',
       })
     );
     expect(files).toEqual([
@@ -58,6 +59,7 @@ describe('getPost', () => {
       'https://api.github.com/repos/SamanKC/samankc.com/contents/content/blog/test-post.md',
       expect.objectContaining({
         headers: expect.objectContaining({ Authorization: 'Bearer test-token' }),
+        cache: 'no-store',
       })
     );
     expect(result).toEqual({ content: '---\ntitle: Test\n---\nBody', sha: 'file-sha' });

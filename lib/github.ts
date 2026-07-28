@@ -41,14 +41,14 @@ function decodeBase64(base64: string): string {
 }
 
 export async function listPosts(token: string): Promise<GithubFile[]> {
-  const res = await fetch(`${API_BASE}/${BLOG_PATH}`, { headers: authHeaders(token) });
+  const res = await fetch(`${API_BASE}/${BLOG_PATH}`, { headers: authHeaders(token), cache: 'no-store' });
   if (!res.ok) return parseErrorResponse(res);
   const files = (await res.json()) as Array<{ name: string; sha: string }>;
   return files.filter((f) => f.name.endsWith('.md')).map((f) => ({ name: f.name, sha: f.sha }));
 }
 
 export async function getPost(token: string, filename: string): Promise<{ content: string; sha: string }> {
-  const res = await fetch(`${API_BASE}/${BLOG_PATH}/${filename}`, { headers: authHeaders(token) });
+  const res = await fetch(`${API_BASE}/${BLOG_PATH}/${filename}`, { headers: authHeaders(token), cache: 'no-store' });
   if (!res.ok) return parseErrorResponse(res);
   const body = (await res.json()) as { content: string; sha: string };
   return { content: decodeBase64(body.content), sha: body.sha };

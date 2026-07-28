@@ -12,15 +12,21 @@ export default function AdminClient() {
 
   return (
     <TokenGate>
-      {(token) =>
+      {(token, onInvalidToken) =>
         view.name === 'list' ? (
           <PostList
             token={token}
+            onInvalidToken={onInvalidToken}
             onNew={() => setView({ name: 'editor', filename: null })}
             onEdit={(filename) => setView({ name: 'editor', filename })}
           />
         ) : (
-          <PostEditor token={token} filename={view.filename} onDone={() => setView({ name: 'list' })} />
+          <PostEditor
+            token={token}
+            filename={view.filename}
+            onDone={() => setView({ name: 'list' })}
+            onInvalidToken={onInvalidToken}
+          />
         )
       }
     </TokenGate>
