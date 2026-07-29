@@ -10,7 +10,12 @@ export default function Footer() {
         <Link href="/contact" className="hover:text-violet-600 dark:hover:text-cyan-400">
           Contact
         </Link>
-        <p>&copy; {new Date().getFullYear()} {profile.name}. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} {profile.name}. All rights reserved.{' '}
+          <Link href="/admin" className="text-slate-400 hover:text-violet-600 dark:text-slate-600 dark:hover:text-cyan-400">
+            Admin
+          </Link>
+        </p>
       </div>
     </footer>
   );
