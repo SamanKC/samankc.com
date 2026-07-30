@@ -1,1 +1,5 @@
 ErrorDocument 404 /404.html
+
+<IfModule LiteSpeed>
+CacheLookup off
+</IfModule>
