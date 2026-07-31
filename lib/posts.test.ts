@@ -17,8 +17,12 @@ describe('getAllPosts', () => {
 
 describe('getPostBySlug', () => {
   it('returns the matching post', () => {
-    const post = getPostBySlug('why-type-safety-matters');
-    expect(post.title).toBe('Why Type Safety Matters More Than You Think');
-    expect(post.tags).toEqual(['typescript', 'engineering']);
+    const post = getPostBySlug('comptia1202-lesson1');
+    expect(post.title).toBe('Understanding the Windows Boot Process: A Complete Guide for CompTIA A+');
+    expect(post.tags).toContain('comptia-a+');
+  });
+
+  it('throws for a missing slug', () => {
+    expect(() => getPostBySlug('does-not-exist')).toThrow();
   });
 });
