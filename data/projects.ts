@@ -61,6 +61,7 @@ export const projects: Project[] = [
     techStack: ['Flutter', 'Dart', 'Laravel', 'REST API'],
     thumbnail: thumbnailFor('medical-pasal'),
     gallery: galleryFor('medical-pasal'),
+    githubUrl: 'https://github.com/samankc/FYPFrontendFinal',
     featured: true,
   },
   {
@@ -115,6 +116,20 @@ export const projects: Project[] = [
     techStack: ['Flutter', 'Dart'],
     thumbnail: thumbnailFor('html-editor'),
     gallery: galleryFor('html-editor'),
+    featured: false,
+  },
+  {
+    slug: 'income-tax-calculator-nepal',
+    title: 'Income Tax Calculator Nepal',
+    shortDescription: 'Flutter app that calculates Nepali income tax quickly and accurately to help with financial planning.',
+    longDescription: [
+      'Income Tax Calculator Nepal is a Flutter app that helps users calculate their income tax quickly and accurately.',
+      'Especially useful for individuals who want to plan their finances and understand how much they need to set aside for taxes.',
+    ].join('\n\n'),
+    techStack: ['Flutter', 'Dart'],
+    thumbnail: thumbnailFor('income-tax-calculator-nepal'),
+    gallery: galleryFor('income-tax-calculator-nepal'),
+    githubUrl: 'https://github.com/samankc/IncomeTaxCalculatorNepal',
     featured: false,
   },
 ];
