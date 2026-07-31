@@ -16,7 +16,6 @@ The Windows boot process is one of the most fundamental concepts every IT Suppor
 
 In this guide, we'll walk through every step of the Windows boot process, explain what each component does, and discuss common failures that occur along the way.
 
-
 # Why the Boot Process Matters
 
 A common mistake beginners make is thinking that Windows starts immediately after pressing the power button.
@@ -30,8 +29,6 @@ Understanding this sequence helps you answer one important troubleshooting quest
 > **Where did the startup process stop?**
 
 Once you know the answer, you've already narrowed down the possible causes.
-
----
 
 # The Complete Windows Boot Process
 
@@ -74,8 +71,6 @@ Login Screen
 
 Let's break down each stage.
 
----
-
 # Step 1 — Power Button
 
 Everything begins when you press the power button.
@@ -90,8 +85,6 @@ Typical symptoms of PSU failure include:
 - No fans spinning
 - No motherboard LEDs
 - Completely dead computer
-
----
 
 # Step 2 — CPU Starts Executing Firmware
 
@@ -111,8 +104,6 @@ Older systems use:
 
 The firmware's responsibility is to initialise the hardware and prepare the system for booting an operating system.
 
----
-
 # Step 3 — BIOS / UEFI Initialisation
 
 At this stage, the firmware starts communicating with the installed hardware.
@@ -127,8 +118,6 @@ It prepares and detects devices including:
 - USB Devices
 
 If the firmware cannot initialise essential hardware, the boot process stops immediately.
-
----
 
 # Step 4 — POST (Power-On Self-Test)
 
@@ -165,8 +154,6 @@ If a component fails, POST may:
 
 For example, improperly seated RAM commonly causes POST failures.
 
----
-
 # Step 5 — Hardware Detection
 
 Once POST completes successfully, the firmware identifies available hardware.
@@ -181,8 +168,6 @@ Examples include:
 - Network Devices
 
 These detected devices become available for the next stage of the boot process.
-
----
 
 # Step 6 — Finding a Boot Device
 
@@ -218,8 +203,6 @@ Common causes include:
 - Corrupted boot files
 - Disconnected storage device
 
----
-
 # Step 7 — Windows Boot Manager
 
 Once a valid Windows installation is located, **Windows Boot Manager** takes over.
@@ -239,8 +222,6 @@ A common error is:
 BOOTMGR is missing
 ```
 
----
-
 # Step 8 — Windows Kernel
 
 The Windows Kernel is the core of the operating system.
@@ -259,8 +240,6 @@ Responsibilities include:
 Think of the kernel as the operating system's traffic controller.
 
 Every application eventually communicates with hardware through the kernel.
-
----
 
 # Step 9 — Device Drivers Load
 
@@ -282,8 +261,6 @@ Without the correct driver:
 - Performance may be limited
 - Hardware may not be detected correctly
 
----
-
 # Step 10 — Windows Services Start
 
 Background services start automatically before you log in.
@@ -298,8 +275,6 @@ Examples include:
 
 These services allow Windows to provide networking, security, printing, and many other features.
 
----
-
 # Step 11 — Login Screen
 
 After all previous stages complete successfully, Windows presents the login screen.
@@ -311,14 +286,12 @@ At this point:
 - Services are running
 - The operating system is ready for user authentication
 
----
-
 # Troubleshooting Using the Boot Process
 
 One of the most valuable skills in IT Support is identifying **where** the startup process stopped.
 
 | Symptom | Likely Cause |
-|----------|--------------|
+| --- | --- |
 | No power | PSU, power cable, motherboard |
 | Fans spin but no display | RAM, GPU, motherboard, CPU |
 | BIOS appears but Windows doesn't load | Boot device, SSD, Boot Manager |
@@ -326,8 +299,6 @@ One of the most valuable skills in IT Support is identifying **where** the start
 | Login screen appears but PC is slow | Startup apps, services, storage performance |
 
 Instead of guessing, use the boot process to isolate the problem.
-
----
 
 # Real-World Example
 
@@ -355,8 +326,6 @@ Possible causes include:
 
 By understanding the boot sequence, you've immediately narrowed the troubleshooting scope.
 
----
-
 # Key Takeaways
 
 Remember these essential points:
@@ -371,5 +340,3 @@ Remember these essential points:
 - Understanding the boot process makes troubleshooting faster and far more systematic.
 
 Whether you're preparing for the CompTIA A+ certification or beginning a career in IT Support, mastering the Windows boot process provides the foundation for diagnosing startup issues with confidence.
-
-In the next lesson, we'll explore **BIOS vs UEFI**, why modern computers use UEFI, how Secure Boot works, and why GPT replaced the older MBR partitioning scheme.
