@@ -8,7 +8,7 @@ const KIND_LABEL: Record<TimelineEntry['kind'], string> = {
 
 const KIND_DOT: Record<TimelineEntry['kind'], string> = {
   job: 'bg-ember-600 dark:bg-ember-400',
-  education: 'border-2 border-ember-600 dark:border-ember-400',
+  education: 'border-2 border-ember-600 bg-ink-50 dark:border-ember-400 dark:bg-ink-950',
   achievement: 'bg-ink-600 dark:bg-ink-400',
 };
 

@@ -14,7 +14,7 @@
 - Since there is no new business logic, tasks do not follow literal TDD red/green. The safety net is: `npm run build` must succeed (catches type/compile errors) and `npx vitest run` must stay green **unmodified** (the existing suite tests behavior/data, not styling, and does not assert on any className — confirmed by grep before writing this plan).
 - Design tokens (from `docs/superpowers/specs/2026-07-31-visual-identity-redesign-design.md`):
   - `ink` scale: `ink-50 #FBFBFA`, `ink-100 #EDEFF2`, `ink-200 #DDE1E6`, `ink-400 #8791A0`, `ink-600 #57626F`, `ink-700 #2E3746`, `ink-800 #1C2430`, `ink-900 #131924`, `ink-950 #0B0F17`.
-  - `ember` scale: `ember-600 #C2570C` (light-mode accent), `ember-400 #F2A65A` (dark-mode accent). One hue, adjusted lightness per mode — never swap to a different hue between light/dark.
+  - `ember` scale: `ember-600 #B44E08` (light-mode accent), `ember-400 #F2A65A` (dark-mode accent). One hue, adjusted lightness per mode — never swap to a different hue between light/dark.
   - No gradients anywhere. No `rounded-full` on buttons or cards (circular icon buttons in `SocialLinks.tsx` are the one legitimate exception — a conventional circular icon-button pattern, not a "gradient CTA pill"). Buttons and cards use `rounded-md` (6px).
   - Primary buttons: `bg-ember-600 text-white` (light) / `dark:bg-ember-400 dark:text-ink-950` (dark) — the darker ink text on the lighter dark-mode accent keeps contrast correct.
   - IBM Plex Mono → `font-display` (headings, nav, labels, tags). IBM Plex Sans → `font-sans` (body text, already the default via `--font-sans`, so most body text needs no class change — only elements that currently force `font-display` on headings need the mono class kept/added).
@@ -58,7 +58,7 @@ Full new file content:
   --color-ink-950: #0B0F17;
 
   --color-ember-400: #F2A65A;
-  --color-ember-600: #C2570C;
+  --color-ember-600: #B44E08;
 }
 
 html {

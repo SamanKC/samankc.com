@@ -59,7 +59,7 @@ hue-swap is itself part of what makes the current look feel templated.
 
 | Token | Value | Usage |
 |---|---|---|
-| `ember-600` | `#C2570C` | light-mode accent (links, active nav, tag text, primary button fill) |
+| `ember-600` | `#B44E08` | light-mode accent (links, active nav, tag text, primary button fill) |
 | `ember-400` | `#F2A65A` | dark-mode accent (same roles) |
 
 ## Typography
