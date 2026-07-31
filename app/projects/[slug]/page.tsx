@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ExternalLink } from 'lucide-react';
@@ -72,31 +71,9 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         )}
       </div>
 
-      <div className="relative mt-10 aspect-video w-full overflow-hidden rounded-2xl">
-        <Image
-          src={project.thumbnail}
-          alt={`Main preview image for the ${project.title} project`}
-          fill
-          className="object-cover"
-        />
-      </div>
-
       <div className="prose prose-slate mt-10 max-w-none dark:prose-invert">
         {project.longDescription.split('\n\n').map((paragraph, i) => (
           <p key={i}>{paragraph}</p>
-        ))}
-      </div>
-
-      <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-        {project.gallery.map((image, i) => (
-          <div key={image} className="relative aspect-square overflow-hidden rounded-xl">
-            <Image
-              src={image}
-              alt={`Gallery image ${i + 1} for the ${project.title} project`}
-              fill
-              className="object-cover"
-            />
-          </div>
         ))}
       </div>
     </article>

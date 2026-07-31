@@ -4,20 +4,10 @@ export type Project = {
   shortDescription: string;
   longDescription: string;
   techStack: string[];
-  thumbnail: string;
-  gallery: string[];
   liveUrl?: string;
   githubUrl?: string;
   featured: boolean;
 };
-
-function thumbnailFor(slug: string) {
-  return `https://picsum.photos/seed/${slug}/800/600`;
-}
-
-function galleryFor(slug: string) {
-  return [1, 2, 3].map((n) => `https://picsum.photos/seed/${slug}-${n}/1200/800`);
-}
 
 export const projects: Project[] = [
   {
@@ -30,8 +20,6 @@ export const projects: Project[] = [
       'Managed end-to-end — from the underlying data model through to the customer-facing storefront.',
     ].join('\n\n'),
     techStack: ['Web', 'E-commerce', 'Full-Stack'],
-    thumbnail: thumbnailFor('kinkhel'),
-    gallery: galleryFor('kinkhel'),
     liveUrl: 'https://kinkhel.com',
     featured: true,
   },
@@ -44,8 +32,6 @@ export const projects: Project[] = [
       'Designed to be easy for non-technical staff to keep up to date.',
     ].join('\n\n'),
     techStack: ['Web', 'CMS', 'Responsive Design'],
-    thumbnail: thumbnailFor('samd-edu-np'),
-    gallery: galleryFor('samd-edu-np'),
     liveUrl: 'https://samd.edu.np',
     featured: false,
   },
@@ -59,8 +45,6 @@ export const projects: Project[] = [
       'Covers the full app experience — browsing, ordering, and account management — on both Android and iOS from a single Flutter codebase.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart', 'Laravel', 'REST API'],
-    thumbnail: thumbnailFor('medical-pasal'),
-    gallery: galleryFor('medical-pasal'),
     githubUrl: 'https://github.com/samankc/FYPFrontendFinal',
     featured: true,
   },
@@ -73,8 +57,6 @@ export const projects: Project[] = [
       'Focused on a smooth reading experience with data kept in sync across sessions.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart', 'Firebase'],
-    thumbnail: thumbnailFor('kabyu-books'),
-    gallery: galleryFor('kabyu-books'),
     featured: false,
   },
   {
@@ -87,8 +69,6 @@ export const projects: Project[] = [
       'Managed the full submission and release process independently, end to end.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart'],
-    thumbnail: thumbnailFor('qr-code-generator'),
-    gallery: galleryFor('qr-code-generator'),
     featured: true,
   },
   {
@@ -100,8 +80,6 @@ export const projects: Project[] = [
       'Published under the verified samankc.com.np publisher account.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart', 'pub.dev'],
-    thumbnail: thumbnailFor('lorem-ipsum-generator'),
-    gallery: galleryFor('lorem-ipsum-generator'),
     liveUrl: 'https://pub.dev/packages/lorem_ipsum_generator',
     featured: false,
   },
@@ -114,8 +92,6 @@ export const projects: Project[] = [
       'Designed for beginner web developers, letting them experiment with HTML without needing a full desktop setup.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart'],
-    thumbnail: thumbnailFor('html-editor'),
-    gallery: galleryFor('html-editor'),
     featured: false,
   },
   {
@@ -127,8 +103,6 @@ export const projects: Project[] = [
       'Especially useful for individuals who want to plan their finances and understand how much they need to set aside for taxes.',
     ].join('\n\n'),
     techStack: ['Flutter', 'Dart'],
-    thumbnail: thumbnailFor('income-tax-calculator-nepal'),
-    gallery: galleryFor('income-tax-calculator-nepal'),
     githubUrl: 'https://github.com/samankc/IncomeTaxCalculatorNepal',
     featured: false,
   },
