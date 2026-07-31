@@ -34,13 +34,13 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-20">
-      <Link href="/blog" className="text-sm font-semibold text-violet-600 dark:text-cyan-400">
+      <Link href="/blog" className="font-display text-sm font-semibold text-ember-600 dark:text-ember-400">
         &larr; All posts
       </Link>
-      <h1 className="mt-4 font-display text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">
+      <h1 className="mt-4 font-display text-3xl font-bold text-ink-950 dark:text-ink-100 sm:text-4xl">
         {post.title}
       </h1>
-      <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-slate-500 dark:text-slate-400">
+      <div className="mt-3 flex flex-wrap items-center gap-3 text-sm text-ink-600 dark:text-ink-400">
         <time dateTime={post.date}>{formatDate(post.date)}</time>
         <span aria-hidden="true">&middot;</span>
         <span>{post.readingTime}</span>
@@ -49,7 +49,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         {post.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700 dark:bg-cyan-400/10 dark:text-cyan-300"
+            className="rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400"
           >
             {tag}
           </span>

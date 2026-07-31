@@ -17,8 +17,8 @@ export default function BlogPage() {
 
   return (
     <AnimatedSection className="mx-auto max-w-4xl px-6 py-20">
-      <h1 className="font-display text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">Blog</h1>
-      <p className="mt-3 text-slate-600 dark:text-slate-300">
+      <h1 className="font-display text-3xl font-bold text-ink-950 dark:text-ink-100 sm:text-4xl">Blog</h1>
+      <p className="mt-3 text-ink-600 dark:text-ink-400">
         Placeholder intro copy for the blog page — replace with a real summary of what you write about.
       </p>
       <div className="mt-10 flex flex-col gap-6">
