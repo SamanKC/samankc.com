@@ -30,7 +30,6 @@ Depending on the age and design of the computer, the firmware will usually be ei
 - UEFI
 # What Is BIOS?
 BIOS stands for:
-```text
 Basic Input/Output System
 
 BIOS is the traditional firmware interface used by older computers.
