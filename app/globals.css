@@ -4,8 +4,21 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: var(--font-inter), sans-serif;
-  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-sans: var(--font-ibm-plex-sans), sans-serif;
+  --font-display: var(--font-ibm-plex-mono), monospace;
+
+  --color-ink-50: #FBFBFA;
+  --color-ink-100: #EDEFF2;
+  --color-ink-200: #DDE1E6;
+  --color-ink-400: #8791A0;
+  --color-ink-600: #57626F;
+  --color-ink-700: #2E3746;
+  --color-ink-800: #1C2430;
+  --color-ink-900: #131924;
+  --color-ink-950: #0B0F17;
+
+  --color-ember-400: #F2A65A;
+  --color-ember-600: #C2570C;
 }
 
 html {
