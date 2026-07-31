@@ -1,15 +1,21 @@
 ---
-title: "Understanding the Windows Boot Process: A Complete Guide for CompTIA A+"
-date: "2026-07-27"
-excerpt: "Learn exactly what happens from the moment you press the power button until the Windows login screen appears. Master the Windows boot process for CompTIA A+, interviews, and real-world IT support."
-tags: ["comptia-a+", "windows", "boot-process", "it-support", "hardware"]
+title: 'Understanding the Windows Boot Process: A Complete Guide for CompTIA A+'
+date: '2026-07-27'
+excerpt: >-
+  Learn exactly what happens from the moment you press the power button until
+  the Windows login screen appears. Master the Windows boot process for CompTIA
+  A+, interviews, and real-world IT support.
+tags:
+  - comptia-a+
+  - windows
+  - boot-process
+  - it-support
+  - hardware
 ---
-
 The Windows boot process is one of the most fundamental concepts every IT Support professional should understand. Whether you're studying for the CompTIA A+ certification, preparing for a technical interview, or troubleshooting a computer that refuses to start, understanding each stage of the boot sequence allows you to identify problems quickly instead of relying on guesswork.
 
 In this guide, we'll walk through every step of the Windows boot process, explain what each component does, and discuss common failures that occur along the way.
 
----
 
 # Why the Boot Process Matters
 
