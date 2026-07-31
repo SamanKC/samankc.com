@@ -102,15 +102,15 @@ export default function PostEditor({
   }
 
   if (loading) {
-    return <p className="mx-auto max-w-5xl px-6 py-12 text-slate-500 dark:text-slate-400">Loading post…</p>;
+    return <p className="mx-auto max-w-5xl px-6 py-12 text-ink-600 dark:text-ink-400">Loading post…</p>;
   }
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-12">
-      <button type="button" onClick={handleBack} className="text-sm font-semibold text-violet-600 dark:text-cyan-400">
+      <button type="button" onClick={handleBack} className="font-display text-sm font-semibold text-ember-600 dark:text-ember-400">
         &larr; Back to posts
       </button>
-      <h1 className="mt-4 font-display text-2xl font-bold text-slate-900 dark:text-white">
+      <h1 className="mt-4 font-display text-2xl font-bold text-ink-950 dark:text-ink-100">
         {isNew ? 'New Post' : 'Edit Post'}
       </h1>
 
@@ -121,7 +121,7 @@ export default function PostEditor({
             <button
               type="button"
               onClick={onInvalidToken}
-              className="mt-2 text-sm font-semibold text-violet-600 dark:text-cyan-400"
+              className="mt-2 font-display text-sm font-semibold text-ember-600 dark:text-ember-400"
             >
               Re-enter token
             </button>
@@ -130,7 +130,7 @@ export default function PostEditor({
       )}
 
       <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Title
           <input
             type="text"
@@ -139,20 +139,20 @@ export default function PostEditor({
               setTitle(e.target.value);
               setDirty(true);
             }}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Slug
           <input
             type="text"
             value={slug}
             disabled={!isNew}
             onChange={(e) => setSlug(slugify(e.target.value))}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 disabled:opacity-50 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 text-ink-950 disabled:opacity-50 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Date
           <input
             type="date"
@@ -161,10 +161,10 @@ export default function PostEditor({
               setDate(e.target.value);
               setDirty(true);
             }}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Tags (comma-separated)
           <input
             type="text"
@@ -173,10 +173,10 @@ export default function PostEditor({
               setTags(e.target.value);
               setDirty(true);
             }}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300 sm:col-span-2">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400 sm:col-span-2">
           Excerpt
           <input
             type="text"
@@ -185,13 +185,13 @@ export default function PostEditor({
               setExcerpt(e.target.value);
               setDirty(true);
             }}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
       </div>
 
       <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <label className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <label className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Body (Markdown)
           <textarea
             value={body}
@@ -200,13 +200,13 @@ export default function PostEditor({
               setDirty(true);
             }}
             rows={20}
-            className="rounded-lg border border-slate-300 bg-white px-3 py-2 font-mono text-sm text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-3 py-2 font-mono text-sm text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
         </label>
-        <div className="flex flex-col gap-1 text-sm text-slate-600 dark:text-slate-300">
+        <div className="flex flex-col gap-1 text-sm text-ink-600 dark:text-ink-400">
           Preview
           <div
-            className="prose prose-slate max-w-none rounded-lg border border-slate-300 bg-white px-4 py-3 dark:prose-invert dark:border-white/20 dark:bg-slate-900"
+            className="prose prose-slate max-w-none rounded-md border border-ink-200 bg-white px-4 py-3 dark:prose-invert dark:border-ink-700 dark:bg-ink-900"
             dangerouslySetInnerHTML={{ __html: renderMarkdown(body) }}
           />
         </div>
@@ -216,7 +216,7 @@ export default function PostEditor({
         type="button"
         onClick={handleSave}
         disabled={saving || !title || !slug}
-        className="mt-6 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 px-6 py-2 font-semibold text-white transition hover:opacity-90 disabled:opacity-50"
+        className="mt-6 rounded-md bg-ember-600 px-6 py-2 font-display font-semibold text-white transition hover:opacity-90 disabled:opacity-50 dark:bg-ember-400 dark:text-ink-950"
       >
         {saving ? 'Saving…' : 'Save'}
       </button>

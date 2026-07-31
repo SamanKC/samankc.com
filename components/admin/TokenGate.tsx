@@ -30,10 +30,10 @@ export default function TokenGate({
   if (!token) {
     return (
       <div className="mx-auto max-w-md px-6 py-24">
-        <h1 className="font-display text-2xl font-bold text-slate-900 dark:text-white">Admin Login</h1>
-        <p className="mt-3 text-sm text-slate-600 dark:text-slate-300">
+        <h1 className="font-display text-2xl font-bold text-ink-950 dark:text-ink-100">Admin Login</h1>
+        <p className="mt-3 text-sm text-ink-600 dark:text-ink-400">
           Enter a GitHub personal access token with Contents read/write access to{' '}
-          <code className="rounded bg-slate-100 px-1 py-0.5 text-xs dark:bg-white/10">SamanKC/samankc.com</code>.
+          <code className="rounded-md bg-ink-100 px-1 py-0.5 text-xs dark:bg-ink-800">SamanKC/samankc.com</code>.
           Use a fine-grained token scoped to just this repository — it&apos;s stored only in this browser.
         </p>
         <form
@@ -50,11 +50,11 @@ export default function TokenGate({
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="github_pat_..."
-            className="rounded-lg border border-slate-300 bg-white px-4 py-2 text-slate-900 dark:border-white/20 dark:bg-slate-900 dark:text-white"
+            className="rounded-md border border-ink-200 bg-white px-4 py-2 text-ink-950 dark:border-ink-700 dark:bg-ink-900 dark:text-ink-100"
           />
           <button
             type="submit"
-            className="rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 px-6 py-2 font-semibold text-white transition hover:opacity-90"
+            className="rounded-md bg-ember-600 px-6 py-2 font-display font-semibold text-white transition hover:opacity-90 dark:bg-ember-400 dark:text-ink-950"
           >
             Unlock
           </button>
@@ -69,7 +69,7 @@ export default function TokenGate({
         <button
           type="button"
           onClick={clearToken}
-          className="text-xs text-slate-500 hover:text-violet-600 dark:text-slate-400 dark:hover:text-cyan-400"
+          className="font-display text-xs text-ink-600 hover:text-ember-600 dark:text-ink-400 dark:hover:text-ember-400"
         >
           Forget token
         </button>

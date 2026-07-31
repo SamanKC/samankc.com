@@ -78,11 +78,11 @@ export default function PostList({
   return (
     <div className="mx-auto max-w-3xl px-6 py-12">
       <div className="flex items-center justify-between">
-        <h1 className="font-display text-2xl font-bold text-slate-900 dark:text-white">Blog Posts</h1>
+        <h1 className="font-display text-2xl font-bold text-ink-950 dark:text-ink-100">Blog Posts</h1>
         <button
           type="button"
           onClick={onNew}
-          className="rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 px-5 py-2 text-sm font-semibold text-white transition hover:opacity-90"
+          className="rounded-md bg-ember-600 px-5 py-2 text-sm font-display font-semibold text-white transition hover:opacity-90 dark:bg-ember-400 dark:text-ink-950"
         >
           New Post
         </button>
@@ -95,7 +95,7 @@ export default function PostList({
             <button
               type="button"
               onClick={onInvalidToken}
-              className="mt-2 text-sm font-semibold text-violet-600 dark:text-cyan-400"
+              className="mt-2 font-display text-sm font-semibold text-ember-600 dark:text-ember-400"
             >
               Re-enter token
             </button>
@@ -103,28 +103,28 @@ export default function PostList({
         </div>
       )}
 
-      {!posts && !error && <p className="mt-6 text-slate-500 dark:text-slate-400">Loading posts…</p>}
+      {!posts && !error && <p className="mt-6 text-ink-600 dark:text-ink-400">Loading posts…</p>}
 
       {posts && (
-        <ul className="mt-6 divide-y divide-slate-200 dark:divide-white/10">
+        <ul className="mt-6 divide-y divide-ink-200 dark:divide-ink-700">
           {posts.map((post) => (
             <li key={post.filename} className="flex items-center justify-between py-4">
               <div>
-                <p className="font-medium text-slate-900 dark:text-white">{post.title}</p>
-                <p className="text-sm text-slate-500 dark:text-slate-400">{post.date}</p>
+                <p className="font-medium text-ink-950 dark:text-ink-100">{post.title}</p>
+                <p className="text-sm text-ink-600 dark:text-ink-400">{post.date}</p>
               </div>
               <div className="flex gap-3">
                 <button
                   type="button"
                   onClick={() => onEdit(post.filename)}
-                  className="text-sm font-semibold text-violet-600 dark:text-cyan-400"
+                  className="font-display text-sm font-semibold text-ember-600 dark:text-ember-400"
                 >
                   Edit
                 </button>
                 <button
                   type="button"
                   onClick={() => handleDelete(post)}
-                  className="text-sm font-semibold text-red-500"
+                  className="font-display text-sm font-semibold text-red-500"
                 >
                   Delete
                 </button>
