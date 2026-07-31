@@ -30,10 +30,10 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
 
   return (
     <article className="mx-auto max-w-4xl px-6 py-20">
-      <Link href="/projects" className="text-sm font-semibold text-violet-600 dark:text-cyan-400">
+      <Link href="/projects" className="font-display text-sm font-semibold text-ember-600 dark:text-ember-400">
         &larr; All projects
       </Link>
-      <h1 className="mt-4 font-display text-3xl font-bold text-slate-900 dark:text-white sm:text-4xl">
+      <h1 className="mt-4 font-display text-3xl font-bold text-ink-950 dark:text-ink-100 sm:text-4xl">
         {project.title}
       </h1>
 
@@ -41,7 +41,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         {project.techStack.map((tech) => (
           <span
             key={tech}
-            className="rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700 dark:bg-cyan-400/10 dark:text-cyan-300"
+            className="rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400"
           >
             {tech}
           </span>
@@ -54,7 +54,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-400 px-6 py-3 font-semibold text-white transition hover:opacity-90"
+            className="inline-flex items-center gap-2 rounded-md bg-ember-600 px-6 py-3 font-display font-semibold text-white transition hover:opacity-90 dark:bg-ember-400 dark:text-ink-950"
           >
             <ExternalLink className="h-4 w-4" /> Live Demo
           </a>
@@ -64,7 +64,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
             href={project.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-6 py-3 font-semibold text-slate-700 transition hover:border-violet-600 hover:text-violet-600 dark:border-white/20 dark:text-slate-200 dark:hover:border-cyan-400 dark:hover:text-cyan-400"
+            className="inline-flex items-center gap-2 rounded-md border border-ink-200 px-6 py-3 font-display font-semibold text-ink-700 transition hover:border-ember-600 hover:text-ember-600 dark:border-ink-700 dark:text-ink-200 dark:hover:border-ember-400 dark:hover:text-ember-400"
           >
             <GithubIcon /> GitHub
           </a>
