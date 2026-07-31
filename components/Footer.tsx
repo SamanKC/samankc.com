@@ -4,10 +4,10 @@ import { profile } from '@/data/profile';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200/60 py-10 dark:border-white/10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center text-sm text-slate-500 dark:text-slate-400">
+    <footer className="border-t border-ink-200 py-10 dark:border-ink-700">
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 text-center text-sm text-ink-600 dark:text-ink-400">
         <SocialLinks />
-        <Link href="/contact" className="hover:text-violet-600 dark:hover:text-cyan-400">
+        <Link href="/contact" className="hover:text-ember-600 dark:hover:text-ember-400">
           Contact
         </Link>
         <p>

@@ -3,7 +3,7 @@ import { profile } from '@/data/profile';
 import { GithubIcon, LinkedinIcon } from './icons';
 
 const linkClassName =
-  'flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:border-violet-600 hover:text-violet-600 dark:border-white/10 dark:text-slate-300 dark:hover:border-cyan-400 dark:hover:text-cyan-400';
+  'flex h-11 w-11 items-center justify-center rounded-full border border-ink-200 text-ink-600 transition hover:border-ember-600 hover:text-ember-600 dark:border-ink-700 dark:text-ink-400 dark:hover:border-ember-400 dark:hover:text-ember-400';
 
 export default function SocialLinks({ className }: { className?: string }) {
   return (

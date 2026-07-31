@@ -14,14 +14,14 @@ export default function MobileMenu({ open, onClose }: { open: boolean; onClose: 
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 24 }}
           transition={{ duration: 0.2 }}
-          className="fixed inset-0 z-50 flex flex-col bg-white p-6 dark:bg-slate-950 md:hidden"
+          className="fixed inset-0 z-50 flex flex-col bg-ink-50 p-6 dark:bg-ink-950 md:hidden"
         >
           <div className="flex justify-end">
             <button
               type="button"
               onClick={onClose}
               aria-label="Close menu"
-              className="flex h-9 w-9 items-center justify-center rounded-full text-slate-600 dark:text-slate-300"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-ink-600 dark:text-ink-400"
             >
               <X className="h-6 w-6" />
             </button>
@@ -32,7 +32,7 @@ export default function MobileMenu({ open, onClose }: { open: boolean; onClose: 
                 key={link.href}
                 href={link.href}
                 onClick={onClose}
-                className="text-2xl font-display font-semibold text-slate-900 dark:text-white"
+                className="font-display text-2xl font-semibold text-ink-950 dark:text-ink-100"
               >
                 {link.label}
               </Link>

@@ -17,9 +17,9 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200/60 bg-white/80 backdrop-blur dark:border-white/10 dark:bg-slate-950/80">
+    <header className="sticky top-0 z-40 border-b border-ink-200 bg-ink-50 dark:border-ink-700 dark:bg-ink-950">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-display text-lg font-bold text-slate-900 dark:text-white">
+        <Link href="/" className="font-display text-lg font-bold text-ink-950 dark:text-ink-100">
           {profile.name}
         </Link>
 
@@ -30,8 +30,8 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition hover:text-violet-600 dark:hover:text-cyan-400 ${
-                  isActive ? 'text-violet-600 dark:text-cyan-400' : 'text-slate-600 dark:text-slate-300'
+                className={`font-display text-sm font-medium transition hover:text-ember-600 dark:hover:text-ember-400 ${
+                  isActive ? 'text-ember-600 dark:text-ember-400' : 'text-ink-600 dark:text-ink-400'
                 }`}
               >
                 {link.label}
@@ -46,7 +46,7 @@ export default function Navbar() {
             type="button"
             onClick={() => setMenuOpen(true)}
             aria-label="Open menu"
-            className="flex h-9 w-9 items-center justify-center rounded-full text-slate-600 dark:text-slate-300 md:hidden"
+            className="flex h-9 w-9 items-center justify-center rounded-full text-ink-600 dark:text-ink-400 md:hidden"
           >
             <Menu className="h-6 w-6" />
           </button>
