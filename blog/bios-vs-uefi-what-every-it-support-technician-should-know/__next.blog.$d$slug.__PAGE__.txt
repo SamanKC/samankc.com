@@ -1,0 +1,185 @@
+1:"$Sreact.fragment"
+2:I[22016,["/_next/static/chunks/2krmzbu1fks-2.js","/_next/static/chunks/3a5_8c3ifcexj.js","/_next/static/chunks/2im7c515bo69p.js"],""]
+5:I[97367,["/_next/static/chunks/2krmzbu1fks-2.js","/_next/static/chunks/3a5_8c3ifcexj.js","/_next/static/chunks/2im7c515bo69p.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+3:T14ce,<p>BIOS and UEFI are firmware systems that prepare a computer before Windows starts. They initialise hardware, run startup checks, locate a bootable device, and hand control to the operating system.</p>
+<p>Understanding them is essential for CompTIA A+ study and real-world IT troubleshooting.</p>
+<h1>What Is BIOS?</h1>
+<p>BIOS stands for <strong>Basic Input/Output System</strong>.</p>
+<p>It is the traditional firmware used on older computers. BIOS performs tasks such as:</p>
+<ul>
+<li>Initialising hardware</li>
+<li>Running POST</li>
+<li>Detecting storage devices</li>
+<li>Checking the boot order</li>
+<li>Starting the operating system</li>
+</ul>
+<p>BIOS commonly works with the <strong>MBR</strong> partition style.</p>
+<h1>What Is UEFI?</h1>
+<p>UEFI stands for <strong>Unified Extensible Firmware Interface</strong>.</p>
+<p>It is the modern replacement for BIOS and provides:</p>
+<ul>
+<li>Faster startup</li>
+<li>Secure Boot</li>
+<li>Support for large drives</li>
+<li>Better hardware compatibility</li>
+<li>Graphical menus and mouse support</li>
+<li>Support for GPT partitions</li>
+</ul>
+<p>Most modern computers use UEFI.</p>
+<h1>BIOS vs UEFI</h1>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>BIOS</th>
+<th>UEFI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Typical systems</td>
+<td>Older computers</td>
+<td>Modern computers</td>
+</tr>
+<tr>
+<td>Partition style</td>
+<td>MBR</td>
+<td>GPT</td>
+</tr>
+<tr>
+<td>Secure Boot</td>
+<td>Not supported</td>
+<td>Supported</td>
+</tr>
+<tr>
+<td>Drive support</td>
+<td>Commonly limited to about 2 TB</td>
+<td>Supports drives larger than 2 TB</td>
+</tr>
+<tr>
+<td>Interface</td>
+<td>Usually keyboard-based</td>
+<td>Often graphical</td>
+</tr>
+<tr>
+<td>Startup speed</td>
+<td>Generally slower</td>
+<td>Generally faster</td>
+</tr>
+</tbody>
+</table>
+<h1>MBR and GPT</h1>
+<p>BIOS usually boots from an <strong>MBR</strong> drive.</p>
+<p>MBR supports:</p>
+<ul>
+<li>Drives up to about 2 TB</li>
+<li>Four primary partitions</li>
+</ul>
+<p>UEFI usually boots from a <strong>GPT</strong> drive.</p>
+<p>GPT provides:</p>
+<ul>
+<li>Support for larger drives</li>
+<li>More partitions</li>
+<li>Backup partition data</li>
+<li>Better reliability</li>
+</ul>
+<h1>Secure Boot</h1>
+<p>Secure Boot is a UEFI security feature.</p>
+<p>It checks whether startup software is trusted before allowing it to run. This helps block unauthorised boot loaders and certain types of pre-boot malware.</p>
+<p>Secure Boot may sometimes need to be disabled temporarily when using older operating systems or unsigned diagnostic tools.</p>
+<h1>Boot Order</h1>
+<p>The boot order tells BIOS or UEFI which device to check first.</p>
+<p>Example:</p>
+<pre><code class="language-text">1. Windows Boot Manager
+2. NVMe SSD
+3. USB Drive
+4. Network Boot
+</code></pre>
+<p>An incorrect boot order can cause errors such as:</p>
+<pre><code class="language-text">No Boot Device Found
+</code></pre>
+<h1>Common Firmware Settings</h1>
+<p>BIOS and UEFI commonly include settings for:</p>
+<ul>
+<li>Boot order</li>
+<li>Secure Boot</li>
+<li>TPM</li>
+<li>CPU virtualisation</li>
+<li>Storage controller mode</li>
+<li>System date and time</li>
+<li>Firmware passwords</li>
+<li>Hardware diagnostics</li>
+</ul>
+<p>Changing storage mode or boot mode incorrectly can prevent Windows from loading.</p>
+<h1>CMOS Battery</h1>
+<p>The CMOS battery helps preserve firmware settings when the computer is disconnected from power.</p>
+<p>A weak battery may cause:</p>
+<ul>
+<li>Incorrect date and time</li>
+<li>Reset boot order</li>
+<li>Firmware settings not being saved</li>
+<li>CMOS checksum errors</li>
+</ul>
+<h1>Common Problems</h1>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Possible Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSD not detected</td>
+<td>Loose connection, failed SSD, disabled controller</td>
+</tr>
+<tr>
+<td>No Boot Device Found</td>
+<td>Incorrect boot order, failed drive, damaged boot files</td>
+</tr>
+<tr>
+<td>Windows Boot Manager missing</td>
+<td>Corrupted EFI partition or wrong boot mode</td>
+</tr>
+<tr>
+<td>Secure Boot violation</td>
+<td>Untrusted or unsigned boot software</td>
+</tr>
+<tr>
+<td>Date and time reset</td>
+<td>Weak CMOS battery</td>
+</tr>
+</tbody>
+</table>
+<h1>Troubleshooting Workflow</h1>
+<pre><code class="language-text">1. Confirm the computer powers on
+2. Check whether POST completes
+3. Enter BIOS or UEFI
+4. Confirm the SSD is detected
+5. Check the boot order
+6. Confirm UEFI or Legacy mode
+7. Review Secure Boot settings
+8. Test the storage device
+9. Repair Windows boot files if required
+</code></pre>
+<p>Make one change at a time and test the result before changing another setting.</p>
+<h1>CompTIA A+ Key Points</h1>
+<p>Remember:</p>
+<ul>
+<li>BIOS is older firmware.</li>
+<li>UEFI is the modern replacement.</li>
+<li>BIOS commonly uses MBR.</li>
+<li>UEFI commonly uses GPT.</li>
+<li>Secure Boot is a UEFI feature.</li>
+<li>POST checks hardware before Windows starts.</li>
+<li>Boot order determines which device starts first.</li>
+<li>A weak CMOS battery can reset firmware settings.</li>
+<li>Firmware updates must not be interrupted.</li>
+</ul>
+<h1>Conclusion</h1>
+<p>BIOS and UEFI connect the computer's hardware to the operating system startup process.</p>
+<p>Knowing how they work helps IT Support technicians diagnose storage problems, boot failures, incorrect firmware settings, and Windows startup issues more quickly.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"mx-auto max-w-3xl px-6 py-20","children":[["$","$L2",null,{"href":"/blog","className":"font-display text-sm font-semibold text-ember-600 dark:text-ember-400","children":"← All posts"}],["$","h1",null,{"className":"mt-4 font-display text-3xl font-bold text-ink-950 dark:text-ink-100 sm:text-4xl","children":"BIOS vs UEFI: What Every IT Support Technician Should Know"}],["$","div",null,{"className":"mt-3 flex flex-wrap items-center gap-3 text-sm text-ink-600 dark:text-ink-400","children":[["$","time",null,{"dateTime":"2026-07-31","children":"July 31, 2026"}],["$","span",null,{"aria-hidden":"true","children":"·"}],["$","span",null,{"children":"4 min read"}]]}],["$","div",null,{"className":"mt-3 flex flex-wrap gap-2","children":[["$","span","\"comptia-a-plus\"",{"className":"rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400","children":"\"comptia-a-plus\""}],["$","span","\"bios\"",{"className":"rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400","children":"\"bios\""}],["$","span","\"uefi\"",{"className":"rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400","children":"\"uefi\""}],["$","span","\"it-support\"",{"className":"rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400","children":"\"it-support\""}],["$","span","\"hardware\"",{"className":"rounded-md bg-ink-100 px-3 py-1 font-display text-xs font-medium text-ember-600 dark:bg-ink-800 dark:text-ember-400","children":"\"hardware\""}]]}],["$","div",null,{"className":"prose prose-slate mt-10 max-w-none dark:prose-invert","dangerouslySetInnerHTML":{"__html":"$3"}}]]}],null,"$L4"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"build"}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null

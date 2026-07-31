@@ -1,0 +1,1263 @@
+{
+    "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
+    "version": "1.0.0",
+    "generatedTime": 1785509403149,
+    "data": [
+        {
+            "type": "file",
+            "name": ".htaccess",
+            "size": 190,
+            "hash": "ef43532950e3db54d1fa49eca29a5ac6d3a8cdca9d715172c9404ea25eb69c50"
+        },
+        {
+            "type": "folder",
+            "name": "404"
+        },
+        {
+            "type": "file",
+            "name": "404.html",
+            "size": 20456,
+            "hash": "e9d667bf60ea67574c656c9369e69bc6aad2bbce6317ac6e3de874d2a7bdf0cc"
+        },
+        {
+            "type": "file",
+            "name": "__next.__PAGE__.txt",
+            "size": 6363,
+            "hash": "f09842496d747bf602e2ae9b9bec3e3e0ba2cbfce3c755931ccc5346d5ab8e69"
+        },
+        {
+            "type": "file",
+            "name": "__next._full.txt",
+            "size": 15007,
+            "hash": "bfbc27284285dfb9e1b671466678bb5f472de86643758ad448f37a7f67d148b9"
+        },
+        {
+            "type": "file",
+            "name": "__next._head.txt",
+            "size": 1661,
+            "hash": "81253aaffbd248038c07b092868a76ed42551748c962a49e48fc813cc156c2ab"
+        },
+        {
+            "type": "file",
+            "name": "__next._index.txt",
+            "size": 5882,
+            "hash": "48cb2013e0f561b87ceb2583f8b2247a70090c1973586cacca1195c11e35130f"
+        },
+        {
+            "type": "file",
+            "name": "__next._tree.txt",
+            "size": 798,
+            "hash": "784ca1a03a4164d4e9f2be084fbb018bab6766531cfaf27855fd6d042b91996b"
+        },
+        {
+            "type": "folder",
+            "name": "_next"
+        },
+        {
+            "type": "folder",
+            "name": "_not-found"
+        },
+        {
+            "type": "folder",
+            "name": "about"
+        },
+        {
+            "type": "folder",
+            "name": "admin"
+        },
+        {
+            "type": "folder",
+            "name": "blog"
+        },
+        {
+            "type": "folder",
+            "name": "contact"
+        },
+        {
+            "type": "file",
+            "name": "icon.svg",
+            "size": 273,
+            "hash": "381816731ba25b4765c643d8726879285c109cc8a9a8c9d989719fdfea37296d"
+        },
+        {
+            "type": "file",
+            "name": "index.html",
+            "size": 29339,
+            "hash": "2d7edcb51949ee932d200071c25f1a7ca58c544c101b402b8e98aaf856b0697c"
+        },
+        {
+            "type": "file",
+            "name": "index.txt",
+            "size": 15007,
+            "hash": "bfbc27284285dfb9e1b671466678bb5f472de86643758ad448f37a7f67d148b9"
+        },
+        {
+            "type": "file",
+            "name": "og-image.svg",
+            "size": 377,
+            "hash": "a2ed91ddf2cca9c03f69e60ee05f48e8952c8c9405c180a7b338b880744ed03c"
+        },
+        {
+            "type": "folder",
+            "name": "projects"
+        },
+        {
+            "type": "file",
+            "name": "resume.pdf",
+            "size": 154140,
+            "hash": "0ccea868cc3c36a72d990b779a06dcc3c80fd760f301ae419a0aed47268af113"
+        },
+        {
+            "type": "file",
+            "name": "404/index.html",
+            "size": 20456,
+            "hash": "e9d667bf60ea67574c656c9369e69bc6aad2bbce6317ac6e3de874d2a7bdf0cc"
+        },
+        {
+            "type": "folder",
+            "name": "_next/build"
+        },
+        {
+            "type": "folder",
+            "name": "_next/static"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._full.txt",
+            "size": 10503,
+            "hash": "cf2fe0a5bf5ec69c298d18a89a119cbd572a7424162f5994009f4f96b97db878"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._head.txt",
+            "size": 2546,
+            "hash": "d3b93e1460a294677a5e7f2cdfabe47789586303068538dc74f2c799a8ed0cdf"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._not-found.__PAGE__.txt",
+            "size": 1150,
+            "hash": "3a3e3f88b1725134113cc58007c278878a8bc446de1354dd9a9ac707edd695f7"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._not-found.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/index.html",
+            "size": 20456,
+            "hash": "e9d667bf60ea67574c656c9369e69bc6aad2bbce6317ac6e3de874d2a7bdf0cc"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/index.txt",
+            "size": 10503,
+            "hash": "cf2fe0a5bf5ec69c298d18a89a119cbd572a7424162f5994009f4f96b97db878"
+        },
+        {
+            "type": "file",
+            "name": "_not-found/__next._tree.txt",
+            "size": 303,
+            "hash": "57171c72d8a05787a723e899e8cdae7bede3bacfb694289ba5d10a64a5e1a31d"
+        },
+        {
+            "type": "file",
+            "name": "about/__next._full.txt",
+            "size": 18754,
+            "hash": "800c64b7f7420e16c005a4159125e2c3a0df69422b743a300d560908df7dd3e0"
+        },
+        {
+            "type": "file",
+            "name": "about/__next._head.txt",
+            "size": 1651,
+            "hash": "b7e005e3920f54f72ffe31205238b2a342f059029789afaf6b68981a8902900f"
+        },
+        {
+            "type": "file",
+            "name": "about/__next._index.txt",
+            "size": 5882,
+            "hash": "ebd62de723e145b0dbefac817690d200d52260008f591ce28c0998a185209a5c"
+        },
+        {
+            "type": "file",
+            "name": "about/__next._tree.txt",
+            "size": 867,
+            "hash": "da6286afd3df46d55dfb88d1ccdfddc0827fd5303144683925877b081b1391a1"
+        },
+        {
+            "type": "file",
+            "name": "about/__next.about.__PAGE__.txt",
+            "size": 9682,
+            "hash": "4a311ef6df0b02f8875435cad6d6755e05219a98522b324e090a2f585bfd9659"
+        },
+        {
+            "type": "file",
+            "name": "about/index.html",
+            "size": 36616,
+            "hash": "9ce0e30ef4380331d6d21483a24ad131f5518626e8103c01d895ae9ff871ac11"
+        },
+        {
+            "type": "file",
+            "name": "about/__next.about.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "about/index.txt",
+            "size": 18754,
+            "hash": "800c64b7f7420e16c005a4159125e2c3a0df69422b743a300d560908df7dd3e0"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next._full.txt",
+            "size": 10766,
+            "hash": "f2315fe93a60bac5da0af999b1d1d7575dd479ddbe5a46074cb4de44c587590b"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next._head.txt",
+            "size": 2546,
+            "hash": "184976e2ab0f0bbe56c3c7f23deb857be1307a6dfeab0965063327434636ac0b"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next._tree.txt",
+            "size": 867,
+            "hash": "c0fed52493d1b3d7e7f00d1166dfb5a13f7dcebd0da6cc9ebca8209374041391"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next.admin.__PAGE__.txt",
+            "size": 695,
+            "hash": "5f4afad8282b6cfb052cd64faa19f77736ce4737e80d89a743cf693e094b5707"
+        },
+        {
+            "type": "file",
+            "name": "admin/__next.admin.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "admin/index.html",
+            "size": 20996,
+            "hash": "b7e3bb0376b7ed958cfcad41433d0e53c00650c5750642fe8fedf39e206ffe7b"
+        },
+        {
+            "type": "file",
+            "name": "admin/index.txt",
+            "size": 10766,
+            "hash": "f2315fe93a60bac5da0af999b1d1d7575dd479ddbe5a46074cb4de44c587590b"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next._full.txt",
+            "size": 14434,
+            "hash": "aa16796c4a025ea9c892e48a5a1425696e48f357379af5d2487552b1920fc4e4"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next._head.txt",
+            "size": 1672,
+            "hash": "572d1e1a1fb851550326edba12d2acf7e711f98c71cf2fff62b42574dac66d4a"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next._index.txt",
+            "size": 5882,
+            "hash": "48cb2013e0f561b87ceb2583f8b2247a70090c1973586cacca1195c11e35130f"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next._tree.txt",
+            "size": 866,
+            "hash": "e1c8cd4f31b1724d123634602813ba3c17f3e985f015d76b1d357bcd0dec600b"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next.blog.__PAGE__.txt",
+            "size": 5365,
+            "hash": "69716df82b3f1c267d88e2a17754e225ed58f8594b7f7e9c5aa3c495110ed7fa"
+        },
+        {
+            "type": "file",
+            "name": "blog/__next.blog.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "folder",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know"
+        },
+        {
+            "type": "folder",
+            "name": "blog/comptia1202-lesson1"
+        },
+        {
+            "type": "file",
+            "name": "blog/index.html",
+            "size": 27931,
+            "hash": "7a68b3716a0c4409ee2b19f5dd7a02a5e8fd7c7afaf6b6d18e08856ce2c30fa8"
+        },
+        {
+            "type": "file",
+            "name": "blog/index.txt",
+            "size": 14434,
+            "hash": "aa16796c4a025ea9c892e48a5a1425696e48f357379af5d2487552b1920fc4e4"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next._full.txt",
+            "size": 13253,
+            "hash": "3675c3aef8897c56be103fced02877adef2757ba0effe4f0fadbf297897e9087"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next._head.txt",
+            "size": 1567,
+            "hash": "5e645d6414afa747156946b62fc43c0c5e1777772c8e4f6a89c7cfe9fa478db8"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next._tree.txt",
+            "size": 869,
+            "hash": "8a3501fc224c561120eb95e3d9748cdebb508efb40aac29422f304aa1649aedc"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next.contact.__PAGE__.txt",
+            "size": 4397,
+            "hash": "6f61fb94378088bb978a210b43f4095afc9c250d9d6d204a62f6f47d1ffde0f3"
+        },
+        {
+            "type": "file",
+            "name": "contact/__next.contact.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "contact/index.html",
+            "size": 26541,
+            "hash": "228f82e497cfaa733c3d239d7fdab20b091af26ea5877f85841867aec78e4340"
+        },
+        {
+            "type": "file",
+            "name": "contact/index.txt",
+            "size": 13253,
+            "hash": "3675c3aef8897c56be103fced02877adef2757ba0effe4f0fadbf297897e9087"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next._full.txt",
+            "size": 19532,
+            "hash": "5e3a9e49fe0b7401ae0c477e6839b7fc1676839e436be9f747be4055f2e6f21b"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next._head.txt",
+            "size": 1696,
+            "hash": "30a8db3ee1ec0fc6ca2fa39833e7f269cc770c88763ba2d4961fc25b21ccea42"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next._index.txt",
+            "size": 5882,
+            "hash": "48cb2013e0f561b87ceb2583f8b2247a70090c1973586cacca1195c11e35130f"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next._tree.txt",
+            "size": 870,
+            "hash": "248007da72ca0784d681f209823df9bfcef428a0c189e29ebfb42ec46cabb33e"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next.projects.__PAGE__.txt",
+            "size": 10423,
+            "hash": "ce9f2d0e9b30e8287dda48b2c38cd1421440f58ba8c6b0f4d4c6267c75740cf9"
+        },
+        {
+            "type": "file",
+            "name": "projects/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "folder",
+            "name": "projects/html-editor"
+        },
+        {
+            "type": "folder",
+            "name": "projects/income-tax-calculator-nepal"
+        },
+        {
+            "type": "file",
+            "name": "projects/index.html",
+            "size": 37558,
+            "hash": "5af7b67bfd6ef3a98846716b2d88110fab10fefcbb4d6abf26882c7f4861c443"
+        },
+        {
+            "type": "file",
+            "name": "projects/index.txt",
+            "size": 19532,
+            "hash": "5e3a9e49fe0b7401ae0c477e6839b7fc1676839e436be9f747be4055f2e6f21b"
+        },
+        {
+            "type": "folder",
+            "name": "projects/kabyu-books"
+        },
+        {
+            "type": "folder",
+            "name": "projects/kinkhel"
+        },
+        {
+            "type": "folder",
+            "name": "projects/lorem-ipsum-generator"
+        },
+        {
+            "type": "folder",
+            "name": "projects/medical-pasal"
+        },
+        {
+            "type": "folder",
+            "name": "projects/qr-code-generator"
+        },
+        {
+            "type": "folder",
+            "name": "projects/samd-edu-np"
+        },
+        {
+            "type": "folder",
+            "name": "_next/static/build"
+        },
+        {
+            "type": "folder",
+            "name": "_next/static/chunks"
+        },
+        {
+            "type": "folder",
+            "name": "_next/static/media"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next._full.txt",
+            "size": 17727,
+            "hash": "4473ad5d5034266cd57d990ebbd9920da6116e6b5ef8466aa875849c61969d9d"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next._head.txt",
+            "size": 2104,
+            "hash": "86cdbd1f43f8831ec5ec8a26b610fcc2f4189f2f19bc51746566e32d5e3cb0b9"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next._tree.txt",
+            "size": 1024,
+            "hash": "56e5fb1b59e2f3ed5565bcd60cb2315ca0614c4fb3008091294c7f680c7da0a3"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next.blog.$d$slug.__PAGE__.txt",
+            "size": 7720,
+            "hash": "c7b177b72d63a79a54b286445b39e096032d6910219926daf7f823426e9699f3"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next.blog.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/__next.blog.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/index.html",
+            "size": 37681,
+            "hash": "820cabf195fabb1522170f05aec6bd33678c1b3858faf2785b5c7ad90a0be5ac"
+        },
+        {
+            "type": "file",
+            "name": "blog/bios-vs-uefi-what-every-it-support-technician-should-know/index.txt",
+            "size": 17727,
+            "hash": "4473ad5d5034266cd57d990ebbd9920da6116e6b5ef8466aa875849c61969d9d"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next._head.txt",
+            "size": 2266,
+            "hash": "7a573c71504431a4679357e96408083a75a51294dbb1fca2b221ef9321d61db1"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next._full.txt",
+            "size": 22083,
+            "hash": "0c7817c120c2a0247118aab4bb02581e3a0d0290588ec1bb7abcf330e6446f8b"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next._tree.txt",
+            "size": 986,
+            "hash": "fe72def0b7a2c9effb040714fbcfc6dce109df1adf3ae47337cb921dc57ee0b8"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next.blog.$d$slug.__PAGE__.txt",
+            "size": 12000,
+            "hash": "1bba3ba38efefc040cde67753f10e3a78d0966bb37ffef81a168da60df89aaa9"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next.blog.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/__next.blog.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/index.html",
+            "size": 47956,
+            "hash": "26032eb9d4330ab5e8c1696b58a93e2958d6a1aa583805e9623853f1a026a81a"
+        },
+        {
+            "type": "file",
+            "name": "blog/comptia1202-lesson1/index.txt",
+            "size": 22083,
+            "hash": "0c7817c120c2a0247118aab4bb02581e3a0d0290588ec1bb7abcf330e6446f8b"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next._full.txt",
+            "size": 11411,
+            "hash": "9dfb1ba41a88f04e9a9fa9fd9fc8b211d997ebc929d56ffd5d3b988ae1a001ba"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next._head.txt",
+            "size": 1813,
+            "hash": "97bfd6ade5f44f51a36afcf4b01c79caa5e163109b3814ec299b88bc72eba718"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next._tree.txt",
+            "size": 982,
+            "hash": "91bc139ac623e4a380f86571d620a21394415645df65bcaca40be2b993ca0a79"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 1783,
+            "hash": "c472d3c83f4f861153e4518543ef5474dc7284a8673205a516b23792505ba08c"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/index.html",
+            "size": 21974,
+            "hash": "b7f78a97ce598b38a8ac17615148797f53c937d8db2964e8c6ebfb29f3be1a41"
+        },
+        {
+            "type": "file",
+            "name": "projects/html-editor/index.txt",
+            "size": 11411,
+            "hash": "9dfb1ba41a88f04e9a9fa9fd9fc8b211d997ebc929d56ffd5d3b988ae1a001ba"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next._full.txt",
+            "size": 12759,
+            "hash": "3be47fa08f796779a69fb529f29d9f3a4596b915286b329511d558273813749a"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next._head.txt",
+            "size": 1849,
+            "hash": "48460f649ef19a00f1006d75aacee371b03e969f344bd764e1ac5a3bd556f191"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next._tree.txt",
+            "size": 998,
+            "hash": "9381fbe6145468ab0a7d83e7ce140e9c630effb6db967ce7594b7aa0d788b57e"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 3063,
+            "hash": "386d334396e52d25336898b2d99f2e9c3a5d438b680334ef514782930cfb4c2f"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/index.html",
+            "size": 24625,
+            "hash": "28df13176cce9be4ec1cd97efd0f0b657a71a8d26ee7ea59622ba80f29687c25"
+        },
+        {
+            "type": "file",
+            "name": "projects/income-tax-calculator-nepal/index.txt",
+            "size": 12759,
+            "hash": "3be47fa08f796779a69fb529f29d9f3a4596b915286b329511d558273813749a"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next._full.txt",
+            "size": 11501,
+            "hash": "1c1004dbbc4f4f038e936e982212c1eadd6e421b94857ce0c82ebcb1aa811fd6"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next._head.txt",
+            "size": 1720,
+            "hash": "dd6178e675618c9375773be71b739a15cd25186ece3525838ffa0242a4424777"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next._tree.txt",
+            "size": 982,
+            "hash": "08b32df2a139af5595e69f379c0323ba320096aa475cdcb3623f6d03e9273a69"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 1966,
+            "hash": "9d19d7c9118bff2548941913c99a6262bd57a90fa8d39caacfe46e5d83fc03f2"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/index.html",
+            "size": 22135,
+            "hash": "a421e8ee3a428552a321e2f530daf452efa73f11d6efb41277c24b12b548ceea"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/kabyu-books/index.txt",
+            "size": 11501,
+            "hash": "1c1004dbbc4f4f038e936e982212c1eadd6e421b94857ce0c82ebcb1aa811fd6"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next._full.txt",
+            "size": 12244,
+            "hash": "86519f10b84efae2f7746f57cc143af4ba1022a68448f48dd8f3254a7ab17d8b"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next._head.txt",
+            "size": 1888,
+            "hash": "09c3d53e29fa9fd537a300ca9737220d64db1608885ee0f43a82119f45650a4e"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next._tree.txt",
+            "size": 978,
+            "hash": "898859c0910ce1902c9a27a3ffd4250c329cbd289a8604ac9fa8eb7cbd361cc9"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 2671,
+            "hash": "8d210dea9097073626881df693639f957de20db0089dd234ed6b4d00ac2f2b33"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/index.html",
+            "size": 23776,
+            "hash": "3b3058cfcd433e8f8f60d0c855d31037d819106d2ac050ff12573bb5231b7b70"
+        },
+        {
+            "type": "file",
+            "name": "projects/kinkhel/index.txt",
+            "size": 12244,
+            "hash": "86519f10b84efae2f7746f57cc143af4ba1022a68448f48dd8f3254a7ab17d8b"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next._full.txt",
+            "size": 12184,
+            "hash": "3cf983a74e3d2333c9efcc9e8aea620d84407c3f5b354bdef831ae08bbb83d06"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next._head.txt",
+            "size": 1834,
+            "hash": "440a9a5026ca8275ba7fb4519bc57d02261d251022db3ddf459891c01bba9bf6"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next._tree.txt",
+            "size": 992,
+            "hash": "ccd3349c8646ee9be4fd83370c7c05ef0e79b0bdb5f49c51426186a44970a2b8"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 2637,
+            "hash": "ee6e10701c16b26e64185a8f4dd09e552462a7c09f2a7f946a6bd52b90d4cf53"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/index.html",
+            "size": 23633,
+            "hash": "4702432d1a7d507994a0609cecc82be16a17adfe8de93366a9469eb14a53917c"
+        },
+        {
+            "type": "file",
+            "name": "projects/lorem-ipsum-generator/index.txt",
+            "size": 12184,
+            "hash": "3cf983a74e3d2333c9efcc9e8aea620d84407c3f5b354bdef831ae08bbb83d06"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next._full.txt",
+            "size": 13097,
+            "hash": "7d7520aa8f27027231d4ef063da082942b546adb71fc8a57532a356298452428"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next._head.txt",
+            "size": 1840,
+            "hash": "bf302832d6e58f2368cb8dba67cb068d3ada493bb199559a94860b6fdf12f59a"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 3438,
+            "hash": "fead04c267a90acab35614d77cf9daa73fb4185cd3d88b80a10ace8b41611a1a"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next._tree.txt",
+            "size": 984,
+            "hash": "b337a16d35c74ce33bb6297b66278771782c3ebce703172b5587afa427e24e09"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/index.txt",
+            "size": 13097,
+            "hash": "7d7520aa8f27027231d4ef063da082942b546adb71fc8a57532a356298452428"
+        },
+        {
+            "type": "file",
+            "name": "projects/medical-pasal/index.html",
+            "size": 25292,
+            "hash": "fa41e24b5915145d7c268404a9717180c6ce257329e609a33be5df200abd69ac"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next._full.txt",
+            "size": 11423,
+            "hash": "43badca124228a591219586357fc45880c1e7a7926abdf4feeb370df058074ff"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next._head.txt",
+            "size": 1855,
+            "hash": "7cb4e03031a569908a00d7179e09ea176604f8cf03b8cb9db7bdc457347ae663"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 1741,
+            "hash": "b38402ef7b142e464e03c423cad38b5b3619ac54fb36d67bdc4679a28d8c111f"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next._tree.txt",
+            "size": 988,
+            "hash": "62447e40c07e85bfdade1db2f0a05ec172c557007bd1d74278336413827da183"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/index.html",
+            "size": 21986,
+            "hash": "1c4f9c90314d8796dd5921160f436a808445e3df35458946815fbfed33d83d4d"
+        },
+        {
+            "type": "file",
+            "name": "projects/qr-code-generator/index.txt",
+            "size": 11423,
+            "hash": "43badca124228a591219586357fc45880c1e7a7926abdf4feeb370df058074ff"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next._full.txt",
+            "size": 12089,
+            "hash": "f0f7b3b79a590588ae092bcec637aefde33fae222aab0387c5f9d23f68003e4c"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next._head.txt",
+            "size": 1771,
+            "hash": "41f37deccddbbe3fd82623ec2566b8d54522b396e199646221f6f45fdca81477"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next._index.txt",
+            "size": 5842,
+            "hash": "0b78c61299de6bdad070f8db2d425a473beb0788f3600177d75c7e1476c5a3b6"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next._tree.txt",
+            "size": 982,
+            "hash": "5d4c9393b3ffc2c97028f6bf35aef70e86672dba2ba69e1424acf8b9dcdf6b8e"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next.projects.$d$slug.__PAGE__.txt",
+            "size": 2625,
+            "hash": "48924df955d27afa63b6a3f5279c1536a942ea841585f112d31aad206d18d207"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next.projects.$d$slug.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/__next.projects.txt",
+            "size": 509,
+            "hash": "defe5485867cdafe530cce0b00b42f97f640fabbcd0e5cb5c60c796179636a38"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/index.html",
+            "size": 23458,
+            "hash": "98bd070eb8e2d5b62ee524b2892c1c48189a5f553b9bad0678f1c5366d968f46"
+        },
+        {
+            "type": "file",
+            "name": "projects/samd-edu-np/index.txt",
+            "size": 12089,
+            "hash": "f0f7b3b79a590588ae092bcec637aefde33fae222aab0387c5f9d23f68003e4c"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/build/_buildManifest.js",
+            "size": 219,
+            "hash": "9476e0afd3f9da68a64e6ec58631191fd3eaca62c9f5a377e7517fe9a89e59ea"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/build/_clientMiddlewareManifest.js",
+            "size": 96,
+            "hash": "5483e3295dc35dfe29ea932efc85341c916f10ff78ff5b0e965e003710893a4a"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/build/_ssgManifest.js",
+            "size": 133,
+            "hash": "b090549666c6c7604844a9fbbe28656761061c1df59ca47a696c162853245129"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/05-c3ty_6dwfk.js",
+            "size": 3377,
+            "hash": "aee2d073d2a1157cfe5c98907f90b3967de4c3625f9ffb154bd1979ae2b917b0"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/0cz1d0mv5g_q7.js",
+            "size": 112594,
+            "hash": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/0l4d8g1o1m7zo.css",
+            "size": 57757,
+            "hash": "caa28214a090dce6765c6f62d380b645f5cc139f5298b32b34e252e4388408b9"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/1o0rucmpg1cgq.js",
+            "size": 730,
+            "hash": "0cb5e8ad6d7e30f3bab848e34cfeed00eb1cd7fc1c8462796dc1afcff6474146"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/27jktro2p5rq9.js",
+            "size": 44414,
+            "hash": "5261101892e2476e4346e19e86fd5f19cbcf7c765ff76e92eb9cefcc86b6db6a"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/2im7c515bo69p.js",
+            "size": 54646,
+            "hash": "ee99665a7157c07c25ea00ed4dc8755491fed0a6b5b6e24bde48c038fbf9e59b"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/2krmzbu1fks-2.js",
+            "size": 22173,
+            "hash": "ce25773730a9c320610a5659556a2869f075077c95a7202ee425b2fab796cf9b"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/3a5_8c3ifcexj.js",
+            "size": 120467,
+            "hash": "ed7912e677720930daff9604e0a50c7dbf7be57694808156e419a8f2fd9b51be"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/3n2n0kdz7qf-n.js",
+            "size": 149991,
+            "hash": "bcab2472e43f23d1d7d88d7cb91802932fad1c6fbabddb14fbc8c87d03829f6f"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/44bwur540tt3i.js",
+            "size": 376049,
+            "hash": "9dcab846a3ab91203746de2f300f215186890827e2e3dd691d543ec3f414af34"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/44rdcja159eo3.js",
+            "size": 23762,
+            "hash": "d582e63cfe92754aeb1dc3489ba4bd7e3e5d933bc39989cf0276c7c95d6afc36"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/453000nidawds.js",
+            "size": 227538,
+            "hash": "6960da4c06406d12ed06e605d8bf72d72f9ccf0f507da3f7f941522a22b500d0"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/chunks/turbopack-1n0_j8nwilc4o.js",
+            "size": 10580,
+            "hash": "ae7fe0afc11cd9d4aaf1b25276bcfc3cf64550d4af638b74d527bb48256d2a96"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/02263ebadd758ea4-s.29yke99gs9qpn.woff2",
+            "size": 4036,
+            "hash": "b2529fba93fd07a50ffb8fc3d103eb04b0c298d4f6564d2833c44fde286de7e4"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/03fc1b4a8d284b5e-s.p.0wiir8udbzjvx.woff2",
+            "size": 40240,
+            "hash": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/1a69062cfe6f77f8-s.0o-3_g79811ob.woff2",
+            "size": 5548,
+            "hash": "b814a03d7e57b0626a906f76911b9361d173a1aabc5544c40f72d6a35a1e4940"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/1bcd0e671759a44c-s.2qt3tdwt-y9x_.woff2",
+            "size": 25408,
+            "hash": "5bac72520e0a9a5669e08b15fa1e15be6f4da74aa0b2d4315a97c11e1465120a"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/23b7a97ae3b5c134-s.p.226pwps5o-gq_.woff2",
+            "size": 10120,
+            "hash": "ad4580d8cb4b5f627c2d18457656732f7f7b070f7837fbc380e08054157e6f6c"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/2e95a7d252b9825a-s.15orukf5wyxb5.woff2",
+            "size": 8960,
+            "hash": "1b6b18fd0fd240bc6d5850f4df621484722d4b5d3650ebdd1e3a8bbd81c75854"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/2fe89d53234c61d4-s.1u30mmyq6lnsd.woff2",
+            "size": 8860,
+            "hash": "f1050dc5317b43434c0aeda599d4624c774ffc162e87a8cf204b949b6a85816d"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/5256dd17dd2ccf14-s.37c107x1d-cfz.woff2",
+            "size": 5540,
+            "hash": "bb7642ad6085595ee4d28c89965450943c78e9772403e79e655d4e347a293d12"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/5689d89b20a4bd5b-s.0m-w082keobar.woff2",
+            "size": 8748,
+            "hash": "099842414ddad0cb366cf984641b14e75c01a2c6e3f42fa13a6e89d1f4c3fc20"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/57215795b8570f5c-s.2rixgazldzomk.woff2",
+            "size": 25868,
+            "hash": "ae1d854fefa1167a79071f1afe01d4d51b60c5840c1be36dd74bd5fe7375b405"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/59b15b4bcd7b1eb5-s.2vemzm0itqzfy.woff2",
+            "size": 5476,
+            "hash": "7b59d6bf7f8b8408ac28f27d01dca9a890abeae77045d343b1d8ccb089a92e54"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/68757d6cddeff913-s.1i-sca43-qwng.woff2",
+            "size": 8848,
+            "hash": "77f03e26f981c582bdba3a7abed4baa2d3149211c01366bb3ab3ba7622ec4ae5"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/5e05ae5b48faa55e-s.1yd4_i3e35931.woff2",
+            "size": 4336,
+            "hash": "311098be73eac339128f0b5a6e33d72645b6f87488541fdf467c402152d297fd"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/6ff74e33ebd7bca3-s.352ti9pm7m6qh.woff2",
+            "size": 4320,
+            "hash": "f746246b6b0b641f99d9e26e0bf4e42197bde692126857857f0195a94362d52a"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/7fea77d1d19108bf-s.2y65deuc30pmy.woff2",
+            "size": 19684,
+            "hash": "c01b3de8c8058462caadd044a6b874a9f4d7098d7d71d6c70e6a278096b8640e"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/90c51ce8fb754fe8-s.02z5rrbg5nt92.woff2",
+            "size": 9612,
+            "hash": "526a4dd36c3af41f73a623e852302d8947d7fd4c00ee3026d82ef1f24a412fcd"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/99e609270109b47d-s.p.40sczeszzbjw1.woff2",
+            "size": 10052,
+            "hash": "c36f509c0a8f9f85f29cb44bc8701d8a9e0b14c499e77a884f789ead7093a7ac"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/9a4838fcda0d1bca-s.0ngr-xkgqz1kf.woff2",
+            "size": 4116,
+            "hash": "69744cabbccc9faf77516ce9b744361e1e6be7f8081400006035a153797d2965"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/a7afbb44bec2bb18-s.1qc6dx89jd2qv.woff2",
+            "size": 5500,
+            "hash": "d524dc8ff6dbf7ed69772f3b2ff4affaf5a89b5762b270e36c3f21da0d4e39f5"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/a7e15459c1805da0-s.p.3y9b8znjr2455.woff2",
+            "size": 10128,
+            "hash": "9e1455e6e9c5866f607e464fffb7855486dcf575b7e69b83a3d234e587fce41b"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/e15f58668ad64cb8-s.3cvcemwuzoywn.woff2",
+            "size": 16296,
+            "hash": "a29d4e6345cdb7e2b6daabf4961a6dcafcbc7ed1eac26186ca4a004cd32d64d8"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/e390973e931a41c5-s.0rgnxg2b64rzs.woff2",
+            "size": 4348,
+            "hash": "c6f09ee0e0a24b7c85ecb2a601eb99332f65b1f6b37c31e0bbe73fb307625eca"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/e532fa1b9921e1cd-s.3cb5lpr2l6xud.woff2",
+            "size": 4000,
+            "hash": "0a8b854cc18641bd1b8222afa7ec82a75e59bc6501f777744ec87db1b6cd7a2c"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/effe91970fc4db64-s.p.0oace-s_gkfks.woff2",
+            "size": 10060,
+            "hash": "a76f53ca6612e7b3828eec2311098675b7f9849ae4169a8bcef6302aec02a6c0"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/f53f4557ddd9f7a6-s.1u-lvzo58r3-e.woff2",
+            "size": 4344,
+            "hash": "c7fa87a1d7be5a6f94a1039b4c43d8ac2e8af035280dabcc5734d0da9f6afcf2"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/fe48c93add1d142c-s.3_gspotjv4tkw.woff2",
+            "size": 4064,
+            "hash": "429a912c8121ee6755458dc215abed11c9e783d6ce0fea883f699823bdd0a62a"
+        },
+        {
+            "type": "file",
+            "name": "_next/static/media/icon.39vgj72geven4.svg",
+            "size": 273,
+            "hash": "381816731ba25b4765c643d8726879285c109cc8a9a8c9d989719fdfea37296d"
+        }
+    ]
+}
